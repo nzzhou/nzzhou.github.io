@@ -1,0 +1,90 @@
+* {
+    --base: #dccca3ff;
+    --borderColor: #824c71ff;
+    --cardColors: #4a2545ff;
+    --black: #000001ff;
+    --accentColor: #90aa86ff;
+    color: #dccca3ff;
+    font-family: "Roboto Mono", monospace;
+}
+
+body {
+    background-image: url(./assets/Background.png);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 32px;
+    font-weight: 700;
+
+    opacity: 0.85;
+}
+
+header::first-letter {
+    font-size: 48px;
+}
+
+.title {
+    font-size: 72px;
+    margin-bottom: 32px;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 36px;
+    margin-bottom: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 0 1px 5px var(--borderColor), 0 3px 5px var(--borderColor);
+}
+
+
+.cards div{
+
+    background-color: var(--cardColors);
+    padding: 16px;
+    border: 0.5px solid var(--borderColor);
+    border-radius: 4px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+
+    transition: all 0.5s;
+}
+
+.cards div:hover {
+
+    box-shadow: 8px 8px var(--accentColor);
+}
+
+.cards div > img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 2px 1px 1px rgba(0,0,0,0.4);
+}
+
+.education > ul {
+
+    background-color: var(--cardColors);
+    font-size: 24px;
+    list-style: " ";
+}
+
+.education > ul li{
+    padding: 16px;
+}
+
+.year {
+    color: var(--accentColor);
+}
+
