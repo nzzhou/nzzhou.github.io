@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    font-family: "Roboto Mono", monospace;
+}
+
+.cards {
+    width: 1000px;
+    background-color:white;
+    color: black;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.cards div {
+
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.cards div > img {
+    height: 300px;
+    width: 400px; 
+    object-fit: cover;
+}
+
+.floater {
+    background-color: aquamarine;
+    height: 50px;
+    position: fixed;
+    top: 0px; 
+    left: 0px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    gap: 50px;
+}
+
